@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: darkgray;
+}
+h1{
+    align-items: center;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size-adjust: none;
+}
+            a:hover {
+    color: #dd8b08
+}
+a:active {
+    color: #e0880c; 
+}
+
+h2{
+    align-items: center;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size-adjust: none;
+} 
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+  .main{
+    background-color: cyan;
+  }
+  span{
+    background-color: cyan;
+  }
+  .flex-container{
+    background-color: #dd8b08;
+    background-image: url("https://media.istockphoto.com/id/1272202314/vector/abstract-diagonal-lines-striped-and-orange-gradient-background.jpg?s=612x612&w=0&k=20&c=9bbNux-trFtvuDEi577e9f1DLthfm4Fkrs1ktomip9U=");
+  }
+  .container{
+    background-color: #dd8b08;
+    background-image: url("https://media.istockphoto.com/id/1272202314/vector/abstract-diagonal-lines-striped-and-orange-gradient-background.jpg?s=612x612&w=0&k=20&c=9bbNux-trFtvuDEi577e9f1DLthfm4Fkrs1ktomip9U=");
+  }
+  span{
+    background-image: url("https://media.istockphoto.com/id/1272202314/vector/abstract-diagonal-lines-striped-and-orange-gradient-background.jpg?s=612x612&w=0&k=20&c=9bbNux-trFtvuDEi577e9f1DLthfm4Fkrs1ktomip9U=");
+  }
+  button{
+    color: #e0880c;
+  }
+
+  section{
+    background-image: url("https://t4.ftcdn.net/jpg/03/18/61/21/360_F_318612144_uj1QhLEEofS1b1DapWzEBbe09kn7ShFD.jpg");
+  }
+
+  .left{
+    background-color: grey;
+    position:relative;
+    cursor: pointer;
+    align-items: last baseline;
+    text-align: right;
+  }
+
+
+  @media (max-width: 600px) {
+    /* Styles for screens up to 600px wide */
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets */
+    .column {
+        flex-basis: 50%; /* Two columns per row on tablets */
+    }
+}
+img, iframe {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1; /* Each column takes equal space */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+@media (max-width: 768px) {
+  .column {
+      flex-basis: 100%; /* Full width on smaller screens */
+  }
+}
